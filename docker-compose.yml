@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: studentdb
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: studentpass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    image: alpine
+    command: sleep infinity
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
