@@ -85,3 +85,7 @@ Planned steps:
 
 This project is licensed under the MIT License.
 
+## C++ (Develop)
+C++ development happens on the `develop` branch via PRs.
+
+
