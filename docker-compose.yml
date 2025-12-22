@@ -15,4 +15,4 @@ services:
       - db
 
 volumes:
-  pgdata:
+  pgdata:
