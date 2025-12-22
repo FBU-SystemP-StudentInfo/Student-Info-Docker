@@ -22,5 +22,11 @@ services:
 
 volumes:
   pgdata:
+environment:
+  DB_HOST: postgres
+  DB_PORT: 5432
+  DB_NAME: student_db
+  DB_USER: student_user
+  DB_PASSWORD: student_password
 
  
