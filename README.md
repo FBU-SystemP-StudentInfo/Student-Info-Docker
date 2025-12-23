@@ -88,4 +88,18 @@ This project is licensed under the MIT License.
 ## C++ (Develop)
 C++ development happens on the `develop` branch via PRs.
 
+## Database Environment Variables
+
+The application uses the following environment variables for database configuration
+when running inside Docker:
+
+- DB_HOST
+- DB_PORT
+- DB_NAME
+- DB_USER
+- DB_PASSWORD
+
+These variables are defined in the docker-compose.yml file and no credentials
+are hardcoded in the application.
+
 
