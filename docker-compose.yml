@@ -29,4 +29,6 @@ environment:
   DB_USER: student_user
   DB_PASSWORD: student_password
 
+# Week 2: DB config is provided via environment variables (no hardcoded credentials in app)
+
  
