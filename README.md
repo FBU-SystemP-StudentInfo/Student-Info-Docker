@@ -102,4 +102,9 @@ when running inside Docker:
 These variables are defined in the docker-compose.yml file and no credentials
 are hardcoded in the application.
 
+## Docker DB Environment Variables (Week 2)
+
+The app reads DB connection settings from environment variables:
+DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD.
+
 
