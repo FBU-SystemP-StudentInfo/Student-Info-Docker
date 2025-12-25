@@ -3,16 +3,16 @@
 Student-Info-Docker is a Student Information System developed as part of the **System Programming** course.  
 The project is implemented in **C++** and runs on **Docker containers** using a **PostgreSQL** database.
 
-The system provides basic **CRUD operations** to manage student information in a containerized environment.
+This repository represents the **Week 2 milestone**, focusing on Docker containerization, multi-container setup, and Docker Hub integration.
 
 ---
 
 ## Project Objectives
 
 - Develop a containerized C++ application using Docker
-- Implement a PostgreSQL-based student information system
+- Configure and run a PostgreSQL database in a Docker container
 - Practice Git, GitHub workflow, and team-based development
-- Gain experience with CI/CD and container orchestration
+- Gain experience with Docker Compose and basic DevOps concepts
 
 ---
 
@@ -20,12 +20,13 @@ The system provides basic **CRUD operations** to manage student information in a
 
 The system consists of the following components:
 
-- **Database Container**: PostgreSQL database to store student information
-- **Application Container**: C++ application responsible for CRUD operations
-- **Version Control**: GitHub for collaboration and project management
-- **Containerization**: Docker and Docker Compose
+- **Database Container:** PostgreSQL database for storing student information
+- **Application Container:** C++ backend application
+- **Container Orchestration:** Docker Compose
+- **Version Control & Collaboration:** GitHub
 
-> Detailed architecture diagrams and implementation details will be added in later weeks.
+> Full database integration and CRUD functionality will be implemented in later weeks.
+
 ## Docker Images (Week 2)
 
 ### PostgreSQL Database
@@ -43,6 +44,16 @@ Pull:
 docker pull sudeulufer/student-cpp-app:week2
 
 ---
+
+Week 2 Status
+
+-Docker infrastructure prepared
+-PostgreSQL container configured
+-C++ application container created
+-Multi-container setup defined with Docker Compose
+-Docker images pushed to Docker Hub
+
+
 
 ## Technologies Used
 
