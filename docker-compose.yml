@@ -1,3 +1,5 @@
+# Docker Compose configuration for Week 2
+# Includes PostgreSQL service with volume, network and healthcheck
 services:
   db:
     image: postgres:16
