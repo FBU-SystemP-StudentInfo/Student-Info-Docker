@@ -26,6 +26,21 @@ The system consists of the following components:
 - **Containerization**: Docker and Docker Compose
 
 > Detailed architecture diagrams and implementation details will be added in later weeks.
+## Docker Images (Week 2)
+
+### PostgreSQL Database
+Docker Hub:
+https://hub.docker.com/r/sudeulufer/student-postgres
+
+Pull:
+docker pull sudeulufer/student-postgres:week2
+
+### C++ Application
+Docker Hub:
+https://hub.docker.com/r/sudeulufer/student-cpp-app
+
+Pull:
+docker pull sudeulufer/student-cpp-app:week2
 
 ---
 
