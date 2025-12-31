@@ -1,13 +1,10 @@
-// entry point (placeholder)
 #include <iostream>
+#include "db_connection.h"
 
 int main() {
-    std::cout << "Student Info System - C++ App\n";
-    return 0;
-}
-#include <iostream>
+    std::cout << "Student app starting..." << std::endl;
 
-int main() {
-    std::cout << "Student Info System - C++ App\n";
+    connect_to_database();
+
     return 0;
 }
