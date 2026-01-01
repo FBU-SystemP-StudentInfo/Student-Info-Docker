@@ -1,4 +1,5 @@
 #include <iostream>
+#include "db_connection.h"
 
 int main() {
     std::cout << "Student Info C++ App - Week 3\n";
