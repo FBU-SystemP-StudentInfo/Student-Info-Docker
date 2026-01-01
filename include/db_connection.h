@@ -3,17 +3,39 @@
 
 /**
  * @file db_connection.h
- * @brief Database connection interface for Week 3.
+ * @brief Database connection interface (Week 3)
  *
- * This module prepares the database connection layer.
- * Actual database logic will be implemented in later weeks.
+ * This header defines the DBConnection class, which represents
+ * the database connection layer of the application.
+ *
+ * Week 3 scope:
+ * - Introduce a clean interface for database connectivity
+ * - Prepare the project structure for PostgreSQL integration
+ * - No real database logic is implemented yet
+ *
+ * Actual database connection and CRUD logic
+ * will be implemented in later weeks.
  */
 
 class DBConnection {
 public:
+    /**
+     * @brief Constructs a DBConnection object
+     */
     DBConnection();
+
+    /**
+     * @brief Destroys the DBConnection object
+     */
     ~DBConnection();
 
+    /**
+     * @brief Establishes a database connection
+     *
+     * This function is a placeholder for Week 3.
+     * It will later handle environment variables
+     * and PostgreSQL connection logic.
+     */
     void connect();
 };
 
