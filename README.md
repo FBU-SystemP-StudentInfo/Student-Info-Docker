@@ -134,3 +134,6 @@ The app reads DB connection settings from environment variables:
 DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD.
 
 
+## Week 3
+- C++ application build and run verified
+- Test results documented with screenshot
