@@ -1,3 +1,5 @@
+// Week 3 verification: application entry point
+
 #include <iostream>
 
 int main() {
