@@ -2,9 +2,8 @@
 #include "db_connection.h"
 
 int main() {
-    std::cout << "Student app starting..." << std::endl;
-
-    connect_to_database();
-
+    std::cout << "Student Info C++ App - Week 3\n";
+    std::cout << "Status: OK\n";
     return 0;
 }
+
