@@ -9,3 +9,7 @@ g++ src/main.cpp -o test-app
 ## Result
 The application compiled successfully and returned status OK.
 
+## Evidence
+Screenshot below shows successful execution in terminal.
+
+
