@@ -120,3 +120,6 @@ The C++ application reads database connection settings from environment variable
 This project is licensed under the MIT License
 
 
+## Week 3
+- C++ application build and run verified
+- Test results documented with screenshot
