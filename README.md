@@ -1,16 +1,17 @@
 # Student-Info-Docker
 
-Student-Info-Docker is a Student Information System developed as part of the **System Programming** course.  
-The project is implemented in **C++** and runs on **Docker containers** using a **PostgreSQL** database.
+Student-Info-Docker is a containerized Student Information System developed as part of the **System Programming** course.
 
-This repository represents the **Week 2 milestone**, focusing on Docker containerization, multi-container setup, and Docker Hub integration.
+The project is implemented in **C++** and runs in **Docker containers** using a **PostgreSQL** database.  
+As of **Week 3**, the system includes database connectivity and basic CRUD operations.
 
 ---
 
 ## Project Objectives
 
 - Develop a containerized C++ application using Docker
-- Configure and run a PostgreSQL database in a Docker container
+- Integrate a PostgreSQL database with the C++ application
+- Implement basic CRUD operations
 - Practice Git, GitHub workflow, and team-based development
 - Gain experience with Docker Compose and basic DevOps concepts
 
@@ -20,117 +21,102 @@ This repository represents the **Week 2 milestone**, focusing on Docker containe
 
 The system consists of the following components:
 
-- **Database Container:** PostgreSQL database for storing student information
-- **Application Container:** C++ backend application
-- **Container Orchestration:** Docker Compose
-- **Version Control & Collaboration:** GitHub
+- **Application Container**  
+  C++ backend application responsible for business logic and database operations
 
-> Full database integration and CRUD functionality will be implemented in later weeks.
+- **Database Container**  
+  PostgreSQL database for storing student information
 
-## Docker Images (Week 2)
+- **Container Orchestration**  
+  Docker Compose is used to manage multi-container setup and networking
+
+- **Version Control & Collaboration**  
+  GitHub is used for source control, issue tracking, and pull requests
+
+---
+
+## Docker Images
 
 ### PostgreSQL Database
-Docker Hub:
-https://hub.docker.com/r/sudeulufer/student-postgres
-
-Pull:
-docker pull sudeulufer/student-postgres:week2
-
+- Docker Hub: https://hub.docker.com/r/sudeulufer/student-postgres
+- Image tag:
+docker pull sudeulufer/student-postgres:week3
+  
 ### C++ Application
-Docker Hub:
-https://hub.docker.com/r/sudeulufer/student-cpp-app
 
-Pull:
-docker pull sudeulufer/student-cpp-app:week2
+- Docker Hub: https://hub.docker.com/r/sudeulufer/student-cpp-app
+- Image tag:
+docker pull sudeulufer/student-cpp-app:week3
 
----
+## Week 3 Status
 
-Week 2 Status
-
--Docker infrastructure prepared
--PostgreSQL container configured
--C++ application container created
--Multi-container setup defined with Docker Compose
--Docker images pushed to Docker Hub
-
-
+PostgreSQL database connected to C++ application
+Database connection implemented using environment variables
+Basic CRUD operations implemented
+Error handling and input validation added
+Multi-container setup managed via Docker Compose
+Updated documentation (README, MANUAL, CONTRIBUTING)
 
 ## Technologies Used
-
-- C++
-- PostgreSQL
-- Docker
-- Docker Compose
-- Git & GitHub
-- Ubuntu
-
----
+C++
+PostgreSQL
+Docker
+Docker Compose
+Git & GitHub
+Ubuntu
 
 ## Project Structure
+
 The project consists of multiple components including a C++ application and a PostgreSQL database running in Docker containers.
-
-
----
+The repository follows a structured layout to separate application logic, configuration, and documentation:
 
 ## Team Members and Roles
 
-- **Student 1 – Project Manager**
-  - Repository management
-  - Branch strategy and code reviews
-  - Documentation and weekly reports
+Student 1 – Project Manager
+Repository management
+Branch strategy and code reviews
+Documentation and weekly reports
 
-- **Student 2 – Docker & DevOps Engineer**
-  - Dockerfiles and Docker Compose
-  - CI/CD pipeline
-  - Docker Hub image management
+Student 2 – Docker & DevOps Engineer
+Dockerfiles and Docker Compose
+CI/CD pipeline
+Docker Hub image management
 
-- **Student 3 – C++ Developer**
-  - C++ application development
-  - Database connection and CRUD operations
-  - Testing and validation
+Student 3 – C++ Developer
+C++ application development
+Database connection and CRUD operations
+Testing and validation
 
 ## Development Workflow
+main branch contains stable releases
+develop branch is used for active development
+All changes are made through feature branches
+Pull Requests are required for merging
+Direct pushes to main and develop are prohibited
 
-- `main` branch contains stable releases
-- `develop` branch is used for active development
-- All changes are made through feature branches
-- Pull Requests are required for merging
-- Direct pushes to `main` and `develop` are prohibited
-- 
+
 ## How to Run
+1. Clone the Repository
+git clone https://github.com/FBU-SystemP-StudentInfo/Student-Info-Docker.git
+cd Student-Info-Docker
 
-Instructions for building and running the project using Docker
-will be provided in later weeks.
+2. Configure Environment Variables
+The application uses the following database environment variables:
+DB_HOST
+DB_PORT
+DB_NAME
+DB_USER
+DB_PASSWORD
 
-Planned steps:
-1. Clone the repository
-2. Configure environment variables
-3. Run Docker Compose
+These variables are defined in the docker-compose.yml file.
 
-## License
-
-This project is licensed under the MIT License.
-
-## C++ (Develop)
-C++ development happens on the `develop` branch via PRs.
+3. Run with Docker Compose
+docker compose up --build
 
 ## Database Environment Variables
+The C++ application reads database connection settings from environment variables and does not hardcode credentials.
 
-The application uses the following environment variables for database configuration
-when running inside Docker:
-
-- DB_HOST
-- DB_PORT
-- DB_NAME
-- DB_USER
-- DB_PASSWORD
-
-These variables are defined in the docker-compose.yml file and no credentials
-are hardcoded in the application.
-
-## Docker DB Environment Variables (Week 2)
-
-The app reads DB connection settings from environment variables:
-DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD.
+## License
+This project is licensed under the MIT License
 
 
