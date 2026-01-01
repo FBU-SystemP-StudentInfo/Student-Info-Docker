@@ -1,13 +1,8 @@
-// entry point (placeholder)
 #include <iostream>
 
 int main() {
-    std::cout << "Student Info System - C++ App\n";
+    std::cout << "Student Info C++ App - Week 3\n";
+    std::cout << "Status: OK\n";
     return 0;
 }
-#include <iostream>
 
-int main() {
-    std::cout << "Student Info System - C++ App\n";
-    return 0;
-}
