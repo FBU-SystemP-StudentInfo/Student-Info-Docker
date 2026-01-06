@@ -1,19 +1,24 @@
 # Student-Info-Docker
 
-Student-Info-Docker is a containerized Student Information System developed as part of the **System Programming** course.
+Student Information System (C++ · Docker · PostgreSQL)
+---
 
-The project is implemented in **C++** and runs in **Docker containers** using a **PostgreSQL** database.  
-As of **Week 3**, the system includes database connectivity and basic CRUD operations.
+## Project Overview
+
+Student-Info-Docker is a containerized Student Information System developed as part of the System Programming course.
+
+The project is implemented in C++, runs inside Docker containers, and uses a PostgreSQL database.
+The system provides basic CRUD (Create, Read, Update, Delete) operations for managing student information and is deployed using Docker Compose.
 
 ---
 
 ## Project Objectives
 
-- Develop a containerized C++ application using Docker
-- Integrate a PostgreSQL database with the C++ application
-- Implement basic CRUD operations
-- Practice Git, GitHub workflow, and team-based development
-- Gain experience with Docker Compose and basic DevOps concepts
+-Develop a containerized C++ application using Docker
+-Integrate a PostgreSQL database with the C++ application
+-Implement basic CRUD operations
+-Practice Git, GitHub workflow, and team-based development
+-Gain experience with Docker Compose and basic DevOps concepts
 
 ---
 
@@ -22,10 +27,12 @@ As of **Week 3**, the system includes database connectivity and basic CRUD opera
 The system consists of the following components:
 
 - **Application Container**  
-  C++ backend application responsible for business logic and database operations
+  C++ backend application
+  Handles business logic and database operations
 
 - **Database Container**  
-  PostgreSQL database for storing student information
+  PostgreSQL database
+  Stores student information
 
 - **Container Orchestration**  
   Docker Compose is used to manage multi-container setup and networking
@@ -48,59 +55,27 @@ docker pull sudeulufer/student-postgres:week3
 - Image tag:
 docker pull sudeulufer/student-cpp-app:week3
 
-## Week 3 Status
+---
 
-PostgreSQL database connected to C++ application
-Database connection implemented using environment variables
-Basic CRUD operations implemented
-Error handling and input validation added
-Multi-container setup managed via Docker Compose
-Updated documentation (README, MANUAL, CONTRIBUTING)
+## How to Run the System
 
-## Technologies Used
-C++
-PostgreSQL
-Docker
-Docker Compose
-Git & GitHub
-Ubuntu
-
-## Project Structure
-
-The project consists of multiple components including a C++ application and a PostgreSQL database running in Docker containers.
-The repository follows a structured layout to separate application logic, configuration, and documentation:
-
-## Team Members and Roles
-
-Student 1 – Project Manager
-Repository management
-Branch strategy and code reviews
-Documentation and weekly reports
-
-Student 2 – Docker & DevOps Engineer
-Dockerfiles and Docker Compose
-CI/CD pipeline
-Docker Hub image management
-
-Student 3 – C++ Developer
-C++ application development
-Database connection and CRUD operations
-Testing and validation
-
-## Development Workflow
-main branch contains stable releases
-develop branch is used for active development
-All changes are made through feature branches
-Pull Requests are required for merging
-Direct pushes to main and develop are prohibited
-
-
-## How to Run
-1. Clone the Repository
+Clone the Repository
 git clone https://github.com/FBU-SystemP-StudentInfo/Student-Info-Docker.git
 cd Student-Info-Docker
 
-2. Configure Environment Variables
+Run with Docker Compose
+docker compose up --build
+
+This command will:
+-Build the C++ application image
+-Start the PostgreSQL database container
+-Start the application container
+-Create required Docker networks and volumes
+
+---
+
+## Environment Variables
+
 The application uses the following database environment variables:
 DB_HOST
 DB_PORT
@@ -109,17 +84,75 @@ DB_USER
 DB_PASSWORD
 
 These variables are defined in the docker-compose.yml file.
+No manual configuration is required for default usage.
 
-3. Run with Docker Compose
-docker compose up --build
+---
 
-## Database Environment Variables
-The C++ application reads database connection settings from environment variables and does not hardcode credentials.
+## Verification & Testing
+
+To verify that the system is running correctly:
+docker ps
+
+Check application logs:
+docker compose logs app
+
+Successful database connection and startup messages indicate that the system is working as expected.
+
+---
+
+## Project Structure
+
+The project is organized using a clear and structured repository layout to separate 
+application logic, Docker configuration, and project documentation. This separation 
+helps improve code readability, maintainability, and team collaboration.
+
+The C++ source code and header files are grouped to encapsulate the core application 
+logic, while Docker-related configuration files are maintained separately to manage 
+containerization and service orchestration. Project documentation files, including 
+installation guides, user manuals, and contribution guidelines, are kept at the root 
+level of the repository for easy access.
+
+This structured approach ensures that development, deployment, and documentation 
+processes remain modular and easy to manage throughout the project lifecycle.
+
+
+---
+
+## Team Members and Roles
+
+Student 1 – Project Manager
+Repository management, branch strategy, code reviews, documentation, weekly reports
+
+Student 2 – Docker & DevOps Engineer
+Dockerfiles, Docker Compose, CI/CD pipeline, Docker Hub image management
+
+Student 3 – C++ Developer
+C++ application development, database connection, CRUD operations, testing and validation
+
+---
+
+## Development Workflow
+main branch contains stable releases
+develop branch is used for active development
+All changes are made through feature branches
+Pull Requests are required for merging
+Direct pushes to main and develop branches are prohibited
+
+---
+
+
+## Documentation
+
+INSTALL.md – Installation and setup instructions
+MANUAL.md – User manual and application usage
+CONTRIBUTING.md – Contribution guidelines and development rules
+
+---
 
 ## License
 This project is licensed under the MIT License
 
+---
 
-## Week 3
-- C++ application build and run verified
-- Test results documented with screenshot
+## README Complete
+The Student Information System is fully containerized, documented, and ready to run using Docker and Docker Compose.
