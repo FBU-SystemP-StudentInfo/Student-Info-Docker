@@ -1,5 +1,5 @@
-# Docker Compose configuration for Week 2
-# Includes PostgreSQL service with volume, network and healthcheck
+version: "3.8"
+
 services:
   db:
     image: postgres:16
@@ -21,16 +21,10 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
 
 volumes:
   pgdata:
-environment:
-  DB_HOST: postgres
-  DB_PORT: 5432
-  DB_NAME: student_db
-  DB_USER: student_user
-  DB_PASSWORD: student_password
-
-# Week 2: DB config is provided via environment variables (no hardcoded credentials in app)
-
  
