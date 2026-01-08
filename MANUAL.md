@@ -49,6 +49,7 @@ Step 1: Clone the Repository
 git clone https://github.com/FBU-SystemP-StudentInfo/Student-Info-Docker.git
 cd Student-Info-Docker
 
+
 Step 2: Start the System
 docker compose up --build
 
@@ -118,6 +119,7 @@ CONTRIBUTING.md: Contribution guidelines and development workflow
 ### User Manual Complete
 
 The Student Information System can now be successfully used to manage student information through a Docker-based C++ application.
+
 
 
 

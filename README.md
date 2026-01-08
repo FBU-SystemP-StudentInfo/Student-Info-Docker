@@ -5,10 +5,12 @@ Student Information System (C++ · Docker · PostgreSQL)
 
 ## Project Overview
 
+
 Student-Info-Docker is a containerized Student Information System developed as part of the System Programming course.
 
 The project is implemented in C++, runs inside Docker containers, and uses a PostgreSQL database.
 The system provides basic CRUD (Create, Read, Update, Delete) operations for managing student information and is deployed using Docker Compose.
+
 
 ---
 
@@ -42,9 +44,10 @@ The system consists of the following components:
 
 ---
 
-## Docker Images
+## Docker Images (Week 3 reference)
 
-### PostgreSQL Database
+
+
 - Docker Hub: https://hub.docker.com/r/sudeulufer/student-postgres
 - Image tag:
 docker pull sudeulufer/student-postgres:week3
@@ -156,3 +159,4 @@ This project is licensed under the MIT License
 
 ## README Complete
 The Student Information System is fully containerized, documented, and ready to run using Docker and Docker Compose.
+

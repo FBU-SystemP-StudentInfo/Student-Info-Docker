@@ -40,3 +40,10 @@ public:
 };
 
 #endif // DB_CONNECTION_H
+
+/**
+ * Week 4 Note:
+ * This interface is kept minimal on purpose.
+ * Detailed error handling and actual DB logic
+ * will be implemented in upcoming weeks.
+ */
