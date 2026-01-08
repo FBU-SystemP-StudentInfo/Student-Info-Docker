@@ -34,3 +34,11 @@ These variables are configured in the `docker-compose.yml` file.
 ```bash
 git clone https://github.com/FBU-SystemP-StudentInfo/Student-Info-Docker.git
 cd Student-Info-Docker
+
+## Week 4 Verification
+
+After starting the services with Docker Compose, verify that containers are running:
+
+```bash
+docker compose ps
+
