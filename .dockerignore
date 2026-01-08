@@ -1,0 +1,10 @@
+.git
+.gitignore
+.vscode
+build
+bin
+*.o
+*.out
+*.log
+*.tmp
+.DS_Store
